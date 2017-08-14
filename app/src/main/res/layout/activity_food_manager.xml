@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_food_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fishmanager.FoodManagerActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:titleTextColor="?attr/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:fitsSystemWindows="true">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/ll">
+    <TextView
+        android:text="当前已有饲料"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_food"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tv_food"
+            android:layout_height="400dp"
+            android:id="@+id/lv_foodset"
+            android:divider="#010101"
+            android:dividerHeight="1dp" />
+
+        <Button
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/btn_del" />
+    </LinearLayout>
+    <Button
+        android:text="添加"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:id="@+id/btn_add" />
+
+</RelativeLayout>

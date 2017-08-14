@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LineGraph">
+        <attr name="row" format="integer" />
+        <attr name="column" format="integer"/>
+        <attr name="color" format="color"/>
+        <attr name="maxrow" format="float"/>
+        <attr name="maxcolum" format="float"/>
+    </declare-styleable>
+</resources>

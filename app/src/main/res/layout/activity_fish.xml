@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fishmanager.FishActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:titleTextColor="?attr/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:fitsSystemWindows="true">
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:text="鱼类"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/textView5"
+        android:id="@+id/fish_set"
+        android:layout_alignParentStart="true"
+        android:divider="#010101"
+        android:dividerHeight="1dp" />
+</RelativeLayout>
